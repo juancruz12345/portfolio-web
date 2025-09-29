@@ -58,7 +58,9 @@ export default function Projects() {
                 <p className={styles.projectDescription}>{project.descripcion}</p>
               </CardContent>
               <CardFooter className={styles.cardFooter}>
-                <AnimatedButton
+              {
+                project?.linkGithub && (
+                    <AnimatedButton
                   variant="outline"
                   className="mr-2"
                   whileHover={{ scale: 1.05 }}
@@ -69,6 +71,8 @@ export default function Projects() {
                     <Github className="mr-2 h-4 w-4" /> GitHub
                   </a>
                 </AnimatedButton>
+                )
+              }
                 {project?.link && (
                   <AnimatedButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} asChild>
                     <a href={project?.link} target="_blank" rel="noopener noreferrer">

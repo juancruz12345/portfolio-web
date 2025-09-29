@@ -1,6 +1,22 @@
 export function ProyectsArray(){
 
-    const projectsArray = [
+    const projectsArray = [{
+      nombre: "MVP Landing template",
+        descripcion: "Landing template para app generica.",
+        
+        imagenPortada: "/mvp-template.png",
+        tecnologiasUsadas: ['react', 'javascript', "typescript"],
+        link:"https://mvp-landing-template.vercel.app/"
+    },
+      {
+        nombre: "Focus Area",
+        descripcion: "Extension de navegador para hacer foco en un area determinada de la pantalla.",
+        descripcionAvanzada:"Desarrollada con React y Javascript.",
+        imagenPortada: "/focusarea-demo.png",
+        tecnologiasUsadas: ['react', 'javascript'],
+        link:"https://chromewebstore.google.com/detail/focus-area/almpahabbffopaofopkjgfakdlindpmn?authuser=0&utm_source=app-launcher"
+        
+  },
        {
         nombre: "OverDOM",
         descripcion: "Extension de navegador similar a DevTools pero más práctica e intuitiva",
